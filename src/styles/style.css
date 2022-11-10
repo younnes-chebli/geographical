@@ -21,3 +21,9 @@ footer {
     margin-top: auto;
     border-top: 3px solid white;
 }
+
+input {
+    background-color: white;
+    color: black;
+    width: 33%;
+}
