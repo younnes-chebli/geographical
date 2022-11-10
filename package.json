@@ -1,0 +1,26 @@
+{
+  "name": "geographical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/younnes-chebli/geographical.git"
+  },
+  "author": "Younnes Chebli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/younnes-chebli/geographical/issues"
+  },
+  "homepage": "https://github.com/younnes-chebli/geographical#readme",
+  "dependencies": {
+    "parcel": "^2.8.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
