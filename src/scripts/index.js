@@ -19,8 +19,23 @@ const isset = (string) => {
     return string != ""
 }
 
-const getMap = async (lon, lat) => {
+const displayMap = (coordinates) => {
+    mapboxgl.accessToken = MAPBOX_KEY
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: coordinates,
+        zoom: 15,
+        projection: 'globe',
+    })
 
+    const marker = new mapboxgl.Marker()
+        .setLngLat(coordinates)
+        .addTo(map);
+    
+    map.on('style.load', () => {
+        map.setFog({})
+    })
 }
 
 addressForm.addEventListener("submit", async (e) => {
@@ -29,9 +44,6 @@ addressForm.addEventListener("submit", async (e) => {
     const address = data.get("address")
     if(isset(address)) {
         const coordinates = await getCoordinates(address)
-        console.log(coordinates)
-        const lon = coordinates[0]
-        const lat = coordinates[1]
-        const map = await getMap(lon, lat)
+        displayMap(coordinates)
     }
 })
