@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/younnes-chebli/geographical#readme",
   "dependencies": {
+    "mapbox-gl": "^2.10.0",
     "parcel": "^2.8.0"
   },
   "devDependencies": {

@@ -1,4 +1,6 @@
 import * as dotenv from "dotenv"
+import * as mapboxgl from "mapbox-gl"
+
 dotenv.config()
 const MAPBOX_KEY = process.env.MAPBOX_KEY
 
