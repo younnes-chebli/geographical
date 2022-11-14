@@ -28,8 +28,17 @@ input {
     width: 33%;
 }
 
+#weather-message {
+    color: orangered;
+}
+
 #map {
     margin-top: 2rem;
     width: 80%;
     height: 50vh;
+}
+
+.mapboxgl-popup {
+    color: black;
+    font-weight: bold;
 }
