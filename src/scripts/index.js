@@ -1,4 +1,4 @@
-import * as dotenv from "dotenv";
+import * as dotenv from "./dotenv";
 import mapboxgl from "mapbox-gl";
 
 dotenv.config();
