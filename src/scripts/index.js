@@ -37,7 +37,7 @@ const displayMap = (coordinates, temperature) => {
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: coordinates,
-        zoom: 15,
+        zoom: 12,
         projection: 'globe',
     });
 
